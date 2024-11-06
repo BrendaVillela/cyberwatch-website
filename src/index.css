@@ -1,0 +1,36 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+.animated-wrapper {
+    animation-name: move-wrapper;
+    animation-duration: 12s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    position: absolute;
+}
+
+@keyframes move-wrapper {
+    0% {
+        transform: translate(150%, 30%) rotate(0) scale(0.8);
+    }
+    50% {
+        transform: translate(50vh, 17vh) rotate(150deg) scale(1.2);
+    }
+    100% {
+        transform: translate(150%, 30%) rotate(0deg) scale(0.8);
+    }
+}
+
+.FadeInDown {
+    animation: fadeInDown 0.4s ease forwards;
+}
+
+  @keyframes fadeInDown {
+    0% { opacity: 0; transform: translateY(-60px); }
+    100% { opacity: 1; transform: translateY(0); }
+  }
+
+  html {
+    scroll-behavior: smooth; 
+  }
