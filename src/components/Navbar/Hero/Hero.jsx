@@ -19,8 +19,6 @@ Adquira o Seu
             </div>
 
             <div className="relative flex justify-center items-center">
-      {/* Fundo Borrado */}
-      <div className="absolute top-[-70px] left-[-30px] h-[400px] w-[300px] bg-black rounded-full blur-3xl z-0"></div>
           
       <div className="relative z-10 mt-12 sm:mt-0">
         <img src={watch} className="h-80" alt="Relógio" />
